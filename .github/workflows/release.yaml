@@ -60,7 +60,7 @@ jobs:
           CONTAINER_IMAGE: ${{ vars.CONTAINER_IMAGE }}
           TOKEN_READ: ${{ secrets.GITHUB_TOKEN }}
           ARCH: "all"
-          ARCHS: "x86_64 aarch64 armv7l i686 riscv64 s390x mips64 mips64el mips mipsel powerpc64le powerpc"
+          ARCHS: "x86_64 aarch64 i686"
         run: |
           ARCH="${ARCH}"
           ARCHS="${ARCHS}"
