@@ -591,8 +591,7 @@ curl_config() {
             --enable-curldebug --enable-dict --enable-netrc \
             --enable-bearer-auth --enable-tls-srp --enable-dnsshuffle \
             --enable-get-easy-options --enable-progress-meter \
-            --with-ca-bundle=/etc/ssl/certs/ca-certificates.crt \
-            --with-ca-path=/etc/ssl/certs \
+            --with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt \
             --with-ca-fallback \
             --disable-ldap --disable-ldaps "${ENABLE_DEBUG}";
 }
